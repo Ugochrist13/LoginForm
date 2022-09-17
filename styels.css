@@ -1,0 +1,273 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+section{
+    width: 100%;
+    display: flex;
+    background-color: rgba(248, 219, 219, 0.349);
+}
+.leftBanner{
+    width: 50%;
+    height: 800px;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.rightBanner{
+    width: 50%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+}
+.lefttext{
+    width: 75%;
+    font-size: 4em;
+    letter-spacing: 0.1em;
+    font-weight: 900;
+    color: white;
+}
+.white{
+    margin-top: 20px;
+    width: 50px;
+    height: 70px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+.men{
+    width: 65%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+.skiman{
+    width: 65%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+.sky{
+    width: 40px;
+    height: 40px;
+    background-color: aquamarine;
+    border-radius: 5px;
+    top: 500px;
+    right: 600px;
+    transform: translateX(-50px);
+}
+.womandiv{
+    width: 100px;
+    height: 100px;
+    background-color: beige;
+    border-radius: 15px;
+}
+.woman{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.mandiv{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    border-radius: 20px;
+    transform: translateX(150px);
+}
+.man{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.mancapdiv{
+    width: 120px;
+    height: 120px;
+    background-color:bisque;
+    border-radius: 20px;
+    transform: translateY(20px);
+}
+.mancap{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.logo{
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.rightcont{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+a{
+    text-decoration: none;
+}
+.login{
+    width: 100%;
+    font-size: 2em;
+    font-weight: 900;
+    margin-bottom: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+form{
+    width: 100%;
+}
+#username{
+    width: 100%;
+    height: 50px;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    background-color: rgba(128, 128, 128, 0.13);
+    padding-left: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    border: none;
+}
+#password{
+    width: 90%;
+    height: 50px;
+    font-size: 1.3em;
+    background-color: rgba(128, 128, 128, 0.13);
+    padding-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+}
+.passcont{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#showpassword{
+    width: 30%;
+    height: 50px;
+    font-weight: 900;
+    padding: 5px 10px;
+    background-color: rgba(128, 128, 128, 0.13);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#login{
+    width: 100%;
+    height: 50px;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 700;
+    background-color: blue;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+.alt{
+    margin-bottom: 50px;
+}
+.icons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding: 0px 20px;
+}
+.google{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    padding: 2px;
+    column-gap: 5px;
+    background-color: rgba(128, 128, 128, 0.13);
+    border-radius: 10px;
+}
+.facebook{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    padding: 2px;
+    column-gap: 5px;
+    background-color: rgba(128, 128, 128, 0.13);
+    border-radius: 10px;
+}
+.signup{
+    margin-bottom: 30px;
+}
+@media screen and (max-width: 950px) {
+    section{
+        display: block;
+    }
+    .leftBanner{
+        width: 100%;
+    }
+    .lefttext{
+        font-size: 4em;
+        letter-spacing: normal;
+    }
+    .rightBanner{
+        width: 100%;
+    }
+    .logo{
+        display: none;
+    }
+    .mandiv{
+        width: 50%;
+        transform: translateX(0px);
+    }
+    .mancapdiv{
+        width: 50%;
+        transform: translateY(0px);
+    }
+    .sky{
+        transform: translateX(0px);
+    }
+}
+@media screen and (max-width: 500px) {
+    section{
+        display: block;
+    }
+    .leftBanner{
+        width: 100%;
+    }
+    .lefttext{
+        font-size: 3em;
+        letter-spacing: normal;
+    }
+    .rightBanner{
+        width: 100%;
+    }
+    .logo{
+        display: none;
+    }
+    .mandiv{
+        width: 50%;
+        transform: translateX(0px);
+    }
+    .mancapdiv{
+        width: 50%;
+        transform: translateY(0px);
+    }
+    .sky{
+        transform: translateX(0px);
+    }
+}
